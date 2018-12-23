@@ -21,6 +21,9 @@
   <ItemGroup>
     <Compile Include="basic_operate.py" />
     <Compile Include="face_detect.py" />
+    <Compile Include="match_target.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test1.py">
       <SubType>Code</SubType>
     </Compile>

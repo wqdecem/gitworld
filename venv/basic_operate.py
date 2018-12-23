@@ -103,7 +103,7 @@ class BasicOperate(object):
 
 path =r'C:\Users\Administrator\Desktop\KYXR7342.jpg'
 BO = BasicOperate()
-img = BO.read_img(path)
+img = BO.read_img(path,color=False)
 h,w =img.shape[:2]
 BO.set_osd(img,"Hello World!",position=(int(w/2),int(h/2)))
 
