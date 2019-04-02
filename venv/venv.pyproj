@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{e32fa5c7-21a0-4a4c-81c8-0854a37bc879}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>basic_operate.py</StartupFile>
+    <StartupFile>person_detect.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -22,6 +22,9 @@
     <Compile Include="basic_operate.py" />
     <Compile Include="face_detect.py" />
     <Compile Include="match_target.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="person_detect.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test1.py">
