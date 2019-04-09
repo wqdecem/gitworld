@@ -1,0 +1,15 @@
+<html>
+<head><title>hello world!!</title></head>
+
+<body>
+
+    hello world!!
+    <form action="/get_dir", method="post">
+        {% csrf_token %}
+        <label for="scan_dir">Scan DIR: </label>
+        <input id="scan_dir" type="text" name="scan_dir" value="{{ scan_dir }}">
+        <input type="submit" value="OK">
+    </form>
+    <p>{{ rlt }}</p>
+</body>
+</html>

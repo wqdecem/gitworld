@@ -8,11 +8,13 @@ hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 img = cv2.imread(r'C:\Users\Administrator\Desktop\2.JPG')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+gray = cv2.resize(gray,(64,128))
 person_hog = hog.detectMultiScale(gray,winStride=(4,4),padding=(32, 32),scale=1.05)
 # winStride window stride
 # padding object padding
 # scale image pyramid scale
 img_hog = img.copy()
+img_hog = cv2.resize(img_hog,(64,128))
 for i in range(len(person_hog[0])):
     if person_hog[1][i]==max(person_hog[1]):
         (x,y,w,h) = person_hog[0][i]
